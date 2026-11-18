@@ -1,0 +1,20 @@
+
+name: My First Pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello
+        run: echo "Hello! My first pipeline is working."
+
+      - name: Check operating system
+        run: uname -a
+
+      - name: Finish
+        run: echo "All checks completed!"
