@@ -14,7 +14,7 @@ jobs:
         run: echo "Hello! My first pipeline is working."
 
       - name: Check operating system
-      run: command-that-does-not-exist
+        run: command-that-does-not-exist
 
       - name: Finish
         run: echo "All checks completed!"
